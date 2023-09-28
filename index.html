@@ -9,36 +9,77 @@
 <style type="text/css">
 	
 	#duck{
-		width:200px;
-		height:200px;
-
+		width:150px;
+		height:150px;
 		background-image: url(https://i.pinimg.com/originals/7f/ae/97/7fae97b0d62464f833f75a7cce0a9902.gif);
 		background-size:contain;
 		background-repeat: no-repeat;
 		animation-name:walking;
 		animation-duration:10s;
 		animation-iteration-count: infinite;
-		position: ;
-		
+		position: absolute;
+		top:80px;
+		left:-15%;
 
 	}
 
 
 
 	#chicken{
+
+		top:150px;
 		width:300px;
 		height:300px;
-
 		background-image:url(chicken.gif);
 		background-size:contain;
 		background-repeat: no-repeat;
-		animation-name:walking;
-		animation-duration:10s;
+		animation-name:walking2;
+		animation-duration:9s;
 		animation-iteration-count: infinite;
 		position: absolute;
+		animation-delay:0.5s;
+		left:-10%;
 	
 	}
 
+#duck2{
+		width:170px;
+		height:170px;
+		background-image: url(cat1.gif);
+		background-size:contain;
+		background-repeat: no-repeat;
+		animation-name:walking3;
+		animation-duration:10s;
+		animation-iteration-count: infinite;
+		position: absolute;
+		top:280px;
+		right:-15%;
+
+
+	}
+
+#duck3{
+		width:150px;
+		height:150px;
+		background-image: url(https://i.pinimg.com/originals/7f/ae/97/7fae97b0d62464f833f75a7cce0a9902.gif);
+		background-size:contain;
+		background-repeat: no-repeat;
+		animation-name:walking2;
+		animation-duration:11s;
+		animation-iteration-count: infinite;
+		position: absolute;
+		top:400px;
+		right:-15%;
+
+
+	}
+ 	.bird{
+ 		display: inline-block;
+ 		width: 300px;
+ 		height:300px;
+ 		margin: 20px;
+
+ 	}
 	@keyframes walking{
 		0%{
 			left:-10%;
@@ -46,6 +87,26 @@
 
 		100%{
 			left:100%;
+		}
+	}
+
+	@keyframes walking2{
+		0%{
+			left:-10%;
+		}
+
+		100%{
+			left:100%;
+		}
+	}
+
+	@keyframes walking3{
+		0%{
+			right:-10%;
+		}
+
+		100%{
+			right:100%;
 		}
 	}
 
@@ -68,15 +129,17 @@ body{
 
 <a href="projects.html">
 
-<div id="duck"></div>
+<div id="duck" class="birds"></div>
 </a>
 
 </center> <!-- end of dolphin div -->
 
 <a href="journal.html">
-<div id="chicken"></div>
+<div id="chicken" class="birds"></div>
 </a>
 
+<div id="duck2" class="birds"></div>
+<div id="duck3" class="birds"></div>
 </body>
 
 
