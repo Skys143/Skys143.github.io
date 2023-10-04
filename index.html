@@ -4,7 +4,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Albert+Sans&family=Bebas+Neue&family=Gabarito:wght@700&family=Pixelify+Sans:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans&family=Bebas+Neue&family=Gabarito:wght@700&family=Pixelify+Sans:wght@500&family=Rubik+Glitch&display=swap" rel="stylesheet">
 
 <style type="text/css">
 	
@@ -27,18 +27,18 @@
 
 	#chicken{
 
-		top:160px;
-		width:300px;
-		height:300px;
+		top:200px;
+		width:200px;
+		height:250px;
 		background-image:url(chicken.gif);
 		background-size:contain;
 		background-repeat: no-repeat;
-		animation-name:walking2;
+		animation-name:walking3;
 		animation-duration:9s;
 		animation-iteration-count: infinite;
 		position: absolute;
 		animation-delay:0.5s;
-		left:-10%;
+		right:-10%;
 	
 	}
 
@@ -64,12 +64,12 @@
 		background-image: url(sproutduck.gif);
 		background-size:contain;
 		background-repeat: no-repeat;
-		animation-name:walking2;
+		animation-name:walking;
 		animation-duration:11s;
 		animation-iteration-count: infinite;
 		position: absolute;
 		top:490px;
-		right:-15%;
+		left:-15%;
 
 
 	}
@@ -90,15 +90,7 @@
 		}
 	}
 
-	@keyframes walking2{
-		0%{
-			left:-10%;
-		}
 
-		100%{
-			left:100%;
-		}
-	}
 
 	@keyframes walking3{
 		0%{
@@ -113,6 +105,9 @@
 body{ 
 font-family: 'Albert Sans', sans-serif;
 font-family: 'Bebas Neue', sans-serif;
+font-family: 'Gabarito', cursive;
+font-family: 'Pixelify Sans', cursive;
+font-family: 'Rubik Glitch', cursive;
  }	
 
 
@@ -125,7 +120,7 @@ font-family: 'Bebas Neue', sans-serif;
 <center>  
 
 <h1>
-	Choose your duck
+	Chase the Duck 
 </h1>
 
 
@@ -139,7 +134,7 @@ font-family: 'Bebas Neue', sans-serif;
 <div id="chicken" class="birds"></div>
 </a>
 
-<a href="project1.html">
+<a href="animation.html">
 <div id="duck2" class="birds"></div>
 </a>
 
