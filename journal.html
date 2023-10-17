@@ -8,8 +8,7 @@
 
 <style type="text/css">
 	body{ 
- font-family: 'Albert Sans', sans-serif;
- background-image: url(background.jpeg)}	
+ 		font-family: 'Albert Sans', sans-serif;}	
 
 
  	#bleh{
@@ -29,11 +28,24 @@
  		background-image:url(git.jpg);
  		background-size:contain;
  		background-repeat:no-repeat;
+
  		
 
  	}
 
- 
+ 	#console{
+ 		width: 500px;
+ 		height: 200px;
+ 		background-image:url(console.png);
+ 		background-repeat: no-repeat;
+ 		background-size:contain;
+ 	}
+
+ 	.container{
+		width:100%;
+		height:800px;
+		background-image: url(moon.png);
+		background-size: 100%;
 
 </style>
 
@@ -62,6 +74,10 @@
 	go git status *what did i change --- if green means already added --- if red its changed but not yet added* -> git add . *adds all the changes* -> git commit -m "changes made" -> git push *publishes your website*
 </p>
 
+<p>10.12.23 #3</p>
+<p>Learned about console.log - a form of java script - learning mouseclick , click , keypress </p>
+
+<div id="console"></div>
 
 <div id="git"></div>
 
@@ -71,6 +87,9 @@
 </a>
 
 </div>
+
+<div class="container"></div>
+<div class="container"></div>
 </body>
 
 </html>
