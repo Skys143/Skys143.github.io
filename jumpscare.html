@@ -5,29 +5,61 @@
 		#soda{
 			width:200px;
 			height: 300px;
-			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvGXHYrqzY6RrmrLXa-OiIWYg1-8u0HtmQqmpvfrtFV7pA8J0DK-RpiAWa93hzs3pEDmU&usqp=CAU);
+			background-image:url(grapesoda.png);
 			background-size: contain;
 			background-repeat: no-repeat;
+			position: relative;
+			top: 150px;
+
 		}
+
+		#words{
+			top:0px;
+			position: relative;
+		}
+
+
 	</style>
 
 </head>
 
 <body>
-<div id="soda"></div>
+
+	<center><div id="words"> <h1>Shake the soda!</h1>
+	<p>press the up and down key</p>
+</div></center>
+
+
+<center> <div id="soda"></div> </center>
+
+
+
 
 <script type="text/javascript">
 	
-	var top =200;
-	document.addEventListener("keypress", function(event){
-		if (event.keyCode == 39)
+	var x =150;
+	document.addEventListener("keydown", function(event){
+		if (event.keyCode == 40)
+			{console.log("hello?")
+		x = x +20;
+		soda.style.top = x +"px";
+		console.log(soda.style.top)
+		console.log(x)
+}
 
-		top = top +10;
-		soda.style.top = top +"px"})
+		if (event.keyCode == 38)
+			{console.log("hello?")
+		x = x -20;
+		soda.style.top = x +"px";
+		console.log(soda.style.top)
+		console.log(x)
 
-	document.addEventListener("keypress", function(){
-		top = top -10;
-		soda.style.top = })
+	}
+	})
+
+
+
+
 </script>
 
 </body>
