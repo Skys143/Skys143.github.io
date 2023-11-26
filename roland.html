@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+	
+	#spider{
+		width: 130px;
+		height: 130px;
+		background-image: url(spiderman2.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		position: absolute;
+		top: 250px;
+		animation-duration: 1.5s;
+		animation-iteration-count: 1;
+		
+	}
+
+	#enemy{
+		width: 130px;
+		height: 130px;
+		background-image:url(https://i.redd.it/dymzw5tb4mu61.gif);
+		background-repeat: no-repeat;
+		background-size: contain;
+		top: 300px;
+		position: absolute;
+		left: 200px;
+	}
+
+
+	#enemy2{
+		width: 150px;
+		height: 150px;
+		background-image:url(spider2.gif);
+		background-repeat: no-repeat;
+		background-size: contain;
+		top: 290px;
+		position: absolute;
+		left: 300px;
+} 
+
+#enemy3{
+		width: 140px;
+		height:140px;
+		background-image:url(spider3.gif);
+		background-repeat: no-repeat;
+		background-size: contain;
+		top: 100px;
+		position: absolute;
+		left: 400px;
+} 
+
+#enemy4{
+		width: 150px;
+		height: 150px;
+		background-image:url(spider4.gif);
+		background-repeat: no-repeat;
+		background-size: contain;
+		top: 310px;
+		position: absolute;
+		left: 500px;
+} 
+
+
+	@keyframes updown{
+			from{
+			width: 130px ;
+			height:130px;
+			top: 250px;
+			background-image:url(spiderman2.png) ;
+
+			}
+			
+
+			 50%{
+			width: 130px ;
+			height:130px;
+			top: 130px;
+			background-image: url(spiderman3.png);
+			}
+
+			to{
+				width: 130px;
+				height: 130px;
+				top: 250px;
+				background-image:url(spiderman2.png) ;
+
+			}
+	}
+
+	@keyframes downup{
+			from{
+			width: 130px ;
+			height:130px;
+			top: 250px;
+			background-image:url(spiderman2.png) ;
+
+			}
+			
+
+			 50%{
+			width: 130px ;
+			height:130px;
+			top: 300px;
+			background-image: url(spiderman1.png);
+			}
+
+			to{
+				width: 130px;
+				height: 130px;
+				top: 250px;
+				background-image:url(spiderman2.png) ;
+
+			}
+	}
+
+
+
+</style>
+
+</head>
+<body>
+
+<div id="spider"></div>
+<div id="enemy"></div>
+<div id="enemy2"></div>
+<div id="enemy3"></div>
+<div id="enemy4"></div>
+<div id="enemy5"></div>
+
+<script type="text/javascript">
+	
+	function addAnimation (){
+		spider.style.animationName = "updown" ;
+	}
+
+	function removeAnimation (){
+		spider.style.animationName = "" ;
+	}
+
+	document.addEventListener("keydown", function(event){
+		if (event.keyCode == 38)
+		{
+		addAnimation()
+
+		console.log("key up")
+		console.log(spider.style.top)
+		setTimeout(removeAnimation, 1400)
+}
+	
+	})
+
+
+	function addAnimation (){
+		spider.style.animationName = "downup" ;
+	}
+
+	function removeAnimation (){
+		spider.style.animationName = "" ;
+	}
+
+	document.addEventListener("keydown", function(event){
+		if (event.keyCode == 40)
+		{
+		addAnimation()
+		setTimeout(removeAnimation, 1400)
+		console.log("key down")
+		console.log(spider.style.top)
+}
+	
+	})
+
+	
+
+</script>
+
+</body>
+</html>
