@@ -130,46 +130,46 @@
 <div id="enemy5"></div>
 
 <script type="text/javascript">
+
+	function addAnimation1 (){
+		spider.style.animationName = "downup" ;
+	}
+
+	function removeAnimation1 (){
+		spider.style.animationName = "" ;
+	}
+
 	
-	function addAnimation (){
+	function addAnimation2 (){
 		spider.style.animationName = "updown" ;
 	}
 
-	function removeAnimation (){
+	function removeAnimation2 (){
 		spider.style.animationName = "" ;
 	}
 
 	document.addEventListener("keydown", function(event){
 		if (event.keyCode == 38)
 		{
-		addAnimation()
+		addAnimation2()
 
 		console.log("key up")
 		console.log(spider.style.top)
 		setTimeout(removeAnimation, 1400)
 }
-	
-	})
 
-
-	function addAnimation (){
-		spider.style.animationName = "downup" ;
-	}
-
-	function removeAnimation (){
-		spider.style.animationName = "" ;
-	}
-
-	document.addEventListener("keydown", function(event){
-		if (event.keyCode == 40)
+if (event.keyCode == 40)
 		{
-		addAnimation()
+		addAnimation1()
 		setTimeout(removeAnimation, 1400)
 		console.log("key down")
 		console.log(spider.style.top)
 }
 	
 	})
+
+
+	
 
 	
 
