@@ -5,37 +5,41 @@
 	<title></title>
 	<style type="text/css">
 		
-		.song{
+		.thing{
 			width: 200px;
 			height: 200px;
-			background-image:url(music.png);
+			background-image:url(slump.jpg);
 			background-size: contain;
 			background-repeat: no-repeat;
 			display: inline-block;
+
 		}
 	</style>
 </head>
 <body>
-<center><h1>How much music does Anari listen to? Not her spotify wrapped minutes listen be 94k</h1></center>
+<center><h1>i need more sleep</h1></center>
 
 
 
 <script type="text/javascript">
 	
-	function makeMusic (input){
-		var music = document.createElement("div");
-		document.body.appendChild(music)
-		music.classList.add("song");
+	function makeDiv (input)
+	{
+		var x = document.createElement("div");
+		document.body.appendChild(x)
+		x.classList.add("thing");
+		
+
+		x.addEventListener("click", function(){
+			x.style.backgroundImage = ("url(sleep.jpg")
+		})
 	}
+	
+	setInterval(makeDiv, 500)
 
-	for (var counter = 1; counter<300; counter=counter+1){
-		makeMusic()
-	}
+	
 
-	// var counter = 0
-	// counter = counter+1;
-
-	// makeMusic
+	
 
 </script>
 </body>
