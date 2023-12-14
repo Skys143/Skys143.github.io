@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+	<style type="text/css">
+		
+
+
+		h1{
+			color:cadetblue;
+			font-size: 40px;
+
+		}
+			p{
+			color:cadetblue;
+			font-size: 30px;
+
+		}
+
+#arrow{
+
+ 		width:200px;
+ 		height:200px;
+ 		background-image:url(heartplane.png);
+ 		background-size:contain;
+ 		background-repeat:no-repeat;
+ 		position: absolute;
+ 		top: 10px;
+ 	}
+		.accessories{
+			width:160px;
+			height:160px;
+			display:inline-block;
+			background-size:contain;
+			background-repeat:no-repeat;
+
+		}
+
+		#hat{
+			background-image:url(hat.png);
+		}
+
+		#hat2{
+			background-image:url(hat2.png);
+		}
+
+		#hat3{
+			background-image:url(hat3.png);
+
+		}
+
+		#hat4{
+			background-image:url(hat4.png);
+
+		}
+
+		#hat5{
+			background-image:url(hat5.png);
+
+		}
+
+		#duck{
+			width:600px;
+			height:600px;
+			background-image:url(duckhat.png);
+			background-size:contain;
+			background-repeat:no-repeat;
+		}
+
+	</style>
+
+</head>
+
+
+<body style="background-color:#cdebee;">
+
+
+<center>
+	<h1> Decorate A Duck! </h1>
+	<p>reload to restart!</p>
+</center>
+
+<center>
+	<a href="index.html">
+	<div id="arrow"> </div> 
+	<div id="hat" class="accessories"></div>
+	<div id="hat2" class="accessories"></div>
+	<div id="hat3" class="accessories"></div>
+		<div id="hat4" class="accessories"></div>
+			<div id="hat5" class="accessories"></div>
+
+	<div id="duck"></div>
+</center>
+
+	<script type="text/javascript">
+		var accessories;
+
+		// function makeTopping(){
+		// 	var hi = document.createElement("div");
+		// 	document.body.appendChild(lala);
+		// 	hi.classLists.add("accessories");
+		// 	hi.innerText = accessories
+
+		// }
+
+
+	hat5.addEventListener("click", 
+			function (){
+			accessories = "hat5.png"
+			console.log(accessories)
+
+		})
+
+	hat4.addEventListener("click", 
+			function (){
+			accessories = "hat4.png"
+			console.log(accessories)
+
+		})
+
+		hat3.addEventListener("click", 
+			function (){
+			accessories = "hat3.png"
+			console.log(accessories)
+
+		})
+
+		hat2.addEventListener("click", 
+			function (){
+			accessories = "hat2.png"
+			console.log(accessories)
+
+		})
+
+		hat.addEventListener("click", 
+			function (){
+			accessories = "hat.png"
+			console.log(accessories)
+
+		})
+
+		duck.addEventListener("click", 
+
+			function makeDiv(event){
+			var hats = document.createElement('div');
+			document.body.appendChild(hats);
+			hats.classList.add('accessories')
+			hats.style.position = "absolute"
+			hats.style.left = event.clientX-1 +"px"
+			hats.style.top = event.clientY-10 +"px"
+			hats.style.backgroundImage = "url("+accessories +")"
+
+
+
+			})
+			
+		
+	</script>
+
+
+
+
+</body>
+</html>
