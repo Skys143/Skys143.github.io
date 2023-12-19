@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Noto+Sans+KR&family=Single+Day&display=swap" rel="stylesheet">
+	<title></title>
+	<style type="text/css">
+
+		#arrow{
+ 		width:200px;
+ 		height:200px;
+ 		background-image:url(heartplane.png);
+ 		background-size:contain;
+ 		background-repeat:no-repeat;
+ 		top: 10px;
+ 		position: absolute;
+ 	} 
+		#cat{
+			width: 440px;
+			height: 440px;
+			background-image: url(cat.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+			top: 90px;
+			position: relative;
+			
+					}
+		.xmas{
+			width: 190px;
+			height: 190px;
+			display:inline-block;
+			background-size:contain;
+			background-repeat:no-repeat;
+			top: 80px;
+			position: relative;
+
+		}
+
+		#cathat1{
+			background-image: url(cathat1.png);
+		}
+		#cathat2{
+			background-image: url(cathat2.png);
+		}
+		#cathat3{
+			background-image: url(cathat3.png);
+		}
+		#cathat4{
+			background-image: url(cathat4.png);
+		}
+		#cathat5{
+			background-image: url(cathat5.png);
+		}
+		#scarf1{
+			background-image: url(scarf1.png);
+		}
+		#scarf2{
+			background-image: url(scarf2.png);
+		}
+body{
+	font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Single Day', cursive;
+}
+
+
+	</style>
+</head>
+<body>
+
+<a href="index.html">
+<div id="arrow"> </div>  
+</a>
+	<center><h1>≽^- ˕ -^≼ Meowy Christmas!! ฅ ^ • ﻌ • ^ ฅ </h1>
+		<p2>i drew these (=˃ᆺ˂=)</p2></center>
+<div class="xmas" id="scarf1"></div>
+<div class="xmas" id="scarf2"></div>
+<div class="xmas" id="cathat1"></div>
+<div class="xmas" id="cathat2"></div>
+<div class="xmas" id="cathat3"></div>
+<div class="xmas" id="cathat4"></div>
+<div class="xmas" id="cathat5"></div>
+<center> <div id="cat"></div></center>
+
+<script type="text/javascript">
+	var hats;
+
+		cathat1.addEventListener("click", 
+			function (){
+			hats = "cathat1.png"
+			console.log(hats)
+
+		})
+		cathat2.addEventListener("click", 
+			function (){
+			hats = "cathat2.png"
+			console.log(hats)
+
+		})
+		cathat3.addEventListener("click", 
+			function (){
+			hats = "cathat3.png"
+			console.log(xmas)
+
+		})
+		cathat4.addEventListener("click", 
+			function (){
+			hats = "cathat4.png"
+			console.log(hats)
+
+		})
+		cathat5.addEventListener("click", 
+			function (){
+			hats = "cathat5.png"
+			console.log(hats)
+
+		})
+		scarf1.addEventListener("click", 
+			function (){
+			hats = "scarf1.png"
+			console.log(hats)
+
+		})
+		scarf2.addEventListener("click", 
+			function (){
+			hats = "scarf2.png"
+			console.log(hats)
+
+		})
+
+	cat.addEventListener("click",
+		function makeKitty (event){
+			var meow = document.createElement('div')
+			document.body.appendChild(meow)
+			meow.classList.add('hats')
+			meow.style.position = "absolute"
+			meow.style.left = event.clientX-80 +"px"
+			meow.style.top = event.clientY-1 +"px"
+			meow.style.backgroundImage = "url("+hats +")"
+		})
+</script>
+
+</body>
+</html>
