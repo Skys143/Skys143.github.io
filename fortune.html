@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+
+			#arrow{
+
+ 		width:110px;
+ 		height:110px;
+ 		background-image:url(heartplane.png);
+ 		background-size:contain;
+ 		background-repeat:no-repeat;
+ 		top: 10px;
+
+
+ 	}
+
+		#cat{
+			width: 450px;
+			height: 450px;
+			background-image: url(cat.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			top: 450px;
+			position: absolute;
+			left: 450px;
+
+
+		}
+
+#bubble{
+			width: 500px;
+			height: 500px;
+			background-image: url(bubble.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			top: 350px;
+			right: 150px;
+			position: absolute;
+
+		}
+#text{
+	position: relative;
+	top: 75px;
+	width: 300px;
+	height:75px;
+	left:150px;
+	font-size: 30px;
+
+}
+
+#title{
+	top: 100px;
+	font-size:50px;
+}
+.container{
+		width:100%;
+		height:900px;
+		top: 0%;
+		background-image: url(https://static.vecteezy.com/system/resources/previews/017/359/448/original/pastel-background-with-hearts-vector.jpg);
+		background-size: 100%;
+		
+	}
+
+body{
+	 font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+/*  font-weight: <weight>;*/
+  font-style: normal;
+  margin:0px;
+}
+
+p{
+	font-size:20px;
+}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+
+		<a href="index.html">
+	<div id="arrow"> </div>
+
+</a>
+	<center><div id='title'> Your Personal Fortune Telling Cat - ask anything related to Valentines Day  </div>
+		<p>(ฅ^♡ﻌ♡^ฅ) click to see your fortune (ฅ^♡ﻌ♡^ฅ)</p> 
+	<div id = "cat"></div>
+	</center>
+
+	<div id = "bubble">
+		<div id = "text"></div>
+	</div>
+
+	</div>
+
+
+
+<script type="text/javascript">
+	
+	var fortunes = [ "ah heck nah", 
+		"sorry bro", 
+		"uhmmm lemmme think...", 
+		"why would i know", 
+		"you are too young", 
+		"why are you even thinking of that", 
+		"try next time", 
+		"signs point to no.", 
+		"try next year", 
+		"no.",
+		"yes",
+		"its ur day today bro",
+		"ur time to shine"]
+
+	document.addEventListener("click", function (){
+		var random = Math.round(Math.random()*12)
+		console.log(fortunes)
+	text.innerText = (fortunes[random])
+	})
+</script>
+
+</body>
+</html>
