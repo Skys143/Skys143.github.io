@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+<style type="text/css">
+	#car{
+		width: 100px;
+		height: 100px;
+		background-color: blue;
+		position: absolute;
+		/*top: 100px;
+		left: 100px;*/
+	}
+
+</style>
+</head>
+<body>
+	<div id="car"></div>
+
+	<script type="text/javascript">
+		
+		var x =0
+		var y =0
+		document.addEventListener("keydown", function(event){
+		
+
+			if (event.key == "ArrowLeft"){
+			 x = x-25;
+				car.style.left = x+"px"
+				car.style.backgroundImage = "url(https://i.ebayimg.com/images/g/JY4AAOSwVFdj4dSP/s-l1200.webp)"
+				car.style.backgroundRepeat = "no-repeat"
+				car.style.backgroundSize = "contain"
+				console.log(x)
+			}
+
+			if (event.key == "ArrowRight"){
+				x = x+25;
+				car.style.left = x+"px"
+				car.style.backgroundImage = "url(https://www.norev.com/838446-superlarge_default/mini-cooper-one-2006-mellow-yellow-1-54.jpg)"
+				car.style.backgroundRepeat = "no-repeat"
+				car.style.backgroundSize = "contain"
+				console.log(x)
+			}
+
+			if (event.key == "ArrowUp"){
+				y = y-25;
+				car.style.top = y+"px"
+				console.log(y)
+			}
+
+			if (event.key == "ArrowDown"){
+				y = y+25;
+				car.style.top = y+"px"
+				console.log(y)
+			}
+		})
+
+
+
+	</script>
+
+</body>
+</html>
