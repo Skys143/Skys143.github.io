@@ -4,12 +4,17 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+    <style type="text/css">
+        
+    </style>
 
 
 </head>
 <body>
-
-What are the chances of you making a fool of yourself today 
+<a href="index.html">
+    <div id="arrow"> </div></a>
+What are the chances of you making a fool of yourself today??
+(write your name in the box and calculate)
 
 	<input id="text"></input>
 
@@ -23,31 +28,18 @@ What are the chances of you making a fool of yourself today
 
         document.getElementById("click").addEventListener('submit', function(event) {
             event.preventDefault();
-            var firstName = document.getElementById('firstName').value;
-            var secondName = document.getElementById('secondName').value;
-            var result = Math.floor(Math.random() * 101);
-
-            if (secondName.toLowerCase() === "hasin") {
-                result = 100; 
-            } else {
-                result = Math.floor(Math.random() * 101); 
-            }
-            if (firstName.toLowerCase() === "hasin") {
-                result = 100;}
-
-
+            var Name = document.getElementById('Name').value;
+    
             
             enteredNames.push({ 'Your Name': firstName, "Partner's Name": secondName });
 
             
             console.log("All People Entered:", enteredNames);
 
-            document.getElementById('result').innerText = 'Your love compatibility is ' + result + '%';
+            document.getElementById('result').innerText = 'The Chance of you making a fool of yourself is' + result + '%';
         });
 
 
-
-	})
 	</script>
 
 </body>

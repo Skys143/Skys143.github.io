@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)file:///Users/c27ls1/Desktop/skys143.github.io/fortune.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./fortune_files/css2" rel="stylesheet">
+
+	<style type="text/css">
+		#cat{
+			width: 450px;
+			height: 450px;
+			background-image: url(cat.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			top: 250px;
+			position: absolute;
+			left: 450px;
+
+
+		}
+
+#bubble{
+			width: 500px;
+			height: 500px;
+			background-image: url(bubble.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			top: 150px;
+			right: 150px;
+			position: absolute;
+
+		}
+#text{
+	position: relative;
+	top: 75px;
+	width: 300px;
+	height:75px;
+	left:150px;
+	font-size: 30px;
+
+}
+.container{
+		width:5000px;
+		height:900px;
+		background-image: url(https://thumb.ac-illust.com/1a/1a871ade76db6a3e62f47aea3e663463_t.jpeg);
+		background-size: 100%;
+		
+	}
+
+body{
+	 font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+	</style>
+</head>
+<body>
+	<center><h1> Your Personal Fortune Telling Cat - ask anything related to Valentines Day  </h1><p>(ฅ^♡ﻌ♡^ฅ) click to see your fortune (ฅ^♡ﻌ♡^ฅ)</p> 
+	<div id="cat"></div></center>
+
+	<div id="bubble">
+		
+		<div id="text"></div>
+	</div>
+<div class="container"></div>
+
+<script type="text/javascript">
+	
+	var fortunes = [ "ah heck nah", "sorry bro", "uhmmm lemmme think...", "why would i know", "you are too young", "why are you even thinking of that", "try next time", "signs point to no.", "try next year", "no."]
+
+	document.addEventListener("click", function (){
+		var random = Math.round(Math.random()*10)
+		console.log(fortunes[random])
+	text.innerText = (fortunes[random])
+	})
+</script>
+
+
+</body></html>

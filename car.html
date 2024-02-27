@@ -4,20 +4,40 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+Use any arrow key to move
 
 <style type="text/css">
+
+
+		#arrow{
+
+ 		width:110px;
+ 		height:110px;
+ 		background-image:url(heartplane.png);
+ 		background-size:contain;
+ 		background-repeat:no-repeat;
+ 		position: absolute;
+ 		top: 10px;
+
+
+ 	}
+
 	#car{
 		width: 100px;
 		height: 100px;
-		background-color: blue;
+		background-image: url(https://www.norev.com/838446-superlarge_default/mini-cooper-one-2006-mellow-yellow-1-54.jpg);
 		position: absolute;
-		/*top: 100px;
-		left: 100px;*/
+		top: 200px;
+		left: 100px;
+		
 	}
 
 </style>
 </head>
 <body>
+	<a href="index.html">
+	<div id="arrow"> </div></a>
+
 	<div id="car"></div>
 
 	<script type="text/javascript">
@@ -48,12 +68,18 @@
 			if (event.key == "ArrowUp"){
 				y = y-25;
 				car.style.top = y+"px"
+				car.style.backgroundImage = "url(https://upload.wikimedia.org/wikipedia/commons/b/bc/Mini_Cooper_-_back.jpg)"
+				car.style.backgroundRepeat = "no-repeat"
+				car.style.backgroundSize = "contain"
 				console.log(y)
 			}
 
 			if (event.key == "ArrowDown"){
 				y = y+25;
 				car.style.top = y+"px"
+				car.style.backgroundImage = "url(https://pbs.twimg.com/media/FD8lVw8XoAcp4lw.jpg)"
+				car.style.backgroundRepeat = "no-repeat"
+				car.style.backgroundSize = "contain"
 				console.log(y)
 			}
 		})

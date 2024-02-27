@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+
+	<style type="text/css">
+		
+		#arrow{
+
+ 		width:110px;
+ 		height:110px;
+ 		background-image:url(heartplane.png);
+ 		background-size:contain;
+ 		background-repeat:no-repeat;
+ 		position: absolute;
+ 		top: 10px;
+
+
+ 	}
+
+	body{
+		font-size:60px;
+	}
+
+	</style>
+</head>
+<body>
+CLICK ANYWHERE!
+
+<a href="index.html">
+	<div id="arrow"> </div></a>
+
+	<script type="text/javascript">
+
+		document.addEventListener("click", function(){
+			var red = Math.round(Math.random()*255)
+			var green = Math.round(Math.random()*255)
+			var blue = Math.round(Math.random()*255)
+			document.body.style.backgroundColor="rgb(" + red + ", " + green + "," + blue + ")"
+
+			document.body.innerText = "rgb(" + red + ", " + green + "," + blue + ")"
+
+		
+
+		})
+	</script>
+
+</body>
+</html>
