@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        
+        h1{
+            font-family:sans-serif;
+            font-size:;
+            color:;
+
+        }
+
+        p{
+            font-family: courier;
+            font-size:;
+            color:;
+        }
+
+        #food{
+        	height:45px;
+        	width:45px;
+        	background-image:url(FOOD.png);
+        	background-size: contain;
+        	background-repeat: no-repeat;
+        	left: 560px;
+        	top: 240px;
+        	position: absolute;
+
+
+        }
+
+        #container{
+        	width:900px;
+        	height:555px;
+        	border:1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+<center><h1> SNAKE GAME FINAL PROJECT<h1></center>
+
+	<center><div id="container"></div></center>
+<div id="food"></div>
+<br><br>
+
+
+
+<script type="text/javascript">
+
+    
+    function makeSquare (x) {
+
+            var square = document.createElement('div');
+                        container.appendChild(square);
+            square.style.width = "45px";
+            square.style.height = "45px";
+            square.style.display = "inline-block";
+            square.style.margin = ".75px";
+            square.style.backgroundRepeat = "no-repeat";
+            square.style.border = "0.75px";
+            square.style.backgroundColor = "#5072A7";
+            // square.style.
+
+
+            // square.style.backgroundImage = "url(" + x + ".jpg)";
+
+            square.style.backgroundSize = "contain";
+            square.style.id = "square" + x;};
+
+    for (var i = 0; i < 209; i++) 
+    { makeSquare(i);}
+</script>
+</body>
+</html>
+
+
